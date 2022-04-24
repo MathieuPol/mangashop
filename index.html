@@ -18,7 +18,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Les Mangas au meilleur prix</a>
               
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarTogglerDemo03">
                   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -45,37 +45,70 @@
     <main>
 
         <div class="row">
-            <h2 class="col-12 text-center">A l'affiche</h2>
+            <h2 class="col-12 text-center bg-dark text-warning mb-0">A l'affiche</h2>
         </div>
 
         <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-20 mx-auto" src="./img/Naruto-Tome-1-avec-Sticker-euro.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-20" src="./img/A-l-aube-d-une-grande-aventure.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-20" src="..." alt="Third slide">
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide p-0" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            
+            <div class="carousel-inner">
+
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div class="d-flex justify-content-center bg-dark">
+                  <div class="card bg-secondary" style="width: 18rem;">
+                    <img src="./img/Naruto-Tome-1-avec-Sticker-euro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Naruto</h5>
+                      <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi magnam reiciendis commodi, cupiditate blanditiis?</p>
+                    </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only text-dark">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only text-dark">Next</span>
-                </a>
-            </div>
-        </div>
+              </div>
+
+              <div class="carousel-item " data-bs-interval="5000">
+                <div class="d-flex justify-content-center bg-dark">
+                  <div class="card bg-secondary" style="width: 18rem;">
+                    <img src="./img/A-l-aube-d-une-grande-aventure.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">One Piece</h5>
+                      <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut ducimus explicabo necessitatibus pariatur culpa?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="carousel-item " data-bs-interval="5000">
+                <div class="d-flex justify-content-center bg-dark">
+                  <div class="card bg-secondary" style="width: 18rem;">
+                    <img src="./img/mha.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">My Hero Academia</h5>
+                      <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus suscipit ex mollitia, voluptas asperiores.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <button class="carousel-control-prev bg-light" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next bg-light" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+      </div>
 
 
 
