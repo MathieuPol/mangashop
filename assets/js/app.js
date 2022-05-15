@@ -6,7 +6,7 @@ const usingApi = {
             cache: 'no-cache'
         };
 
-        const taskApi = fetch('https://kitsu.io/api/edge/trending/manga?page[limit]=20&page[offset]=10', fetchOptions)
+        const taskApi = fetch('https://kitsu.io/api/edge/manga?page[limit]=20', fetchOptions)
 
         taskApi.then(
             function(response) {
