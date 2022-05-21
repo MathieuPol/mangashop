@@ -24,10 +24,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                <a class="nav-link home active"  id="home" aria-current="page" href="#">Acceuil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="list.html">Liste</a>
+                <a class="nav-link" id="list" href="#">Liste</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://mathieupol.github.io/" tabindex="-1" aria-disabled="true">Retour au menu</a>
@@ -41,11 +41,28 @@
     </header>
 
     <main>
-
+      <div class="home--content">
         <div class="row">
             <h2 class="col-12 text-center bg-dark text-warning mb-0">A l'affiche</h2>
         </div>
+        <div class="bg-dark">
+          <h1 class="text-center text-warning">Exemple d'intégration</h1>
+          <p class="text-light text-center">
+              La page que vous voyez est plus complexe qu'elle en à l'air.<br>
+              On est ici sur une SPA(single page application)<br>
+              Lors du click sur la liste celle-ci n'est pas chargée depuis une nouvelle page<br>
+              Elle est chargée dynamiquement avec javascript.<br>
+              Nous avons donc un index html pour deux pages.<br>
+              
 
+  
+  
+          </p>
+          <div class="test d-flex flex-wrap justify-content-evenly">
+  
+          </div>
+  
+        </div>
         <div class="row">
 
           <div id="carouselExampleDark" class="carousel carousel-dark slide p-0" data-bs-ride="carousel">
@@ -192,7 +209,35 @@
 
         </div>
 
+      </div>
+      <div class="list--content d-none bg-dark">
+        <h1 class="text-center text-warning">Exemple d'intégration</h1>
+        <p class="text-light text-center">
+            Ici on pars sur une integration dynamique.<br>
+            En effet les images et les textes ne sont pas écris en dur.<br>
+            J'utilise la technique de template de javascript afin de générer chaques cards.<br>
+            De plus le contenu des cards est généré grace à l'injection AJAX.
 
+
+        </p>
+        <div class="api d-flex flex-wrap justify-content-evenly">
+
+        </div>
+
+      </div>
+
+
+    <template id="cardTpl">
+        <div class="card m-5" style="width: 32rem;">
+          <img class="card-img-top" alt="...">
+          <div class="card-header">
+            <h5>Tome:</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text overflow-auto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </template>
 
       </main>
     <footer>
@@ -208,7 +253,7 @@
 
 
 
-  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
